@@ -1,0 +1,17 @@
+[package]
+name = "accelo-datasource"
+version = "0.1.0"
+authors = ["Evan Helbig <evan.helbig@willowtreeapps.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.50"
+error-chain = "0.12.4"
+reqwest = { version = "0.11.3", features = ["json"] }
+serde = { version = "1.0.125", features = ["derive"] }
+tokio = { version = "1.5.0", features = ["macros"] }
+
+[dev-dependencies]
+serde_json = "1.0.64"

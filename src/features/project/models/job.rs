@@ -1,0 +1,31 @@
+use serde::Deserialize;
+
+#[derive(Debug, Deserialize, PartialEq)]
+pub struct Job {
+    pub title: String,
+    pub id: String,
+    pub standing: Option<String>,
+    pub against_id: Option<String>,
+    pub against_type: Option<String>,
+    pub paused: Option<String>,
+    pub job_type: Option<String>,
+    pub manager: Option<String>,
+    pub modified_by: Option<String>,
+    pub status: Option<String>,
+    pub rate: Option<String>,
+    pub affiliation: Option<String>,
+    pub custom_id: Option<String>,
+    pub against: Option<String>,
+    pub staff_bookmarked: Option<String>,
+    pub date_created: Option<String>,
+    pub date_modified: Option<String>,
+    pub date_commenced: Option<String>,
+    pub date_started: Option<String>,
+    pub date_due: Option<String>,
+    pub date_completed: Option<String>,
+    pub date_last_interacted: Option<String>,
+    pub rate_charged: Option<String>,
+    pub company: Option<String>,
+    pub job_object_budget: Option<String>,
+    pub job_contract: Option<String>,
+}
